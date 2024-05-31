@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Empresas</title>
+</head>
+<body>
+    <h1>Busca de Empresas</h1>
+    <form action="/search" method="get">
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="name">Nome da Empresa:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <div id="results">
+        {% if rows %}
+            <table border="1">
+                <tr>
+                    <th>CNPJ_CIA</th>
+                    <th>DENOM_SOCIAL</th>
+                    <th>SIT</th>
+                    <th>DATA REGISTRO</th>
+                </tr>
+                {% for row in rows %}
+                <tr>
+                    <td>{{ row['CNPJ_CIA'] }}</td>
+                    <td>{{ row['DENOM_SOCIAL'] }}</td>
+                    <td>{{ row['SIT'] }}</td>
+                    <td>{{ row['DT_REG'] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>Nenhum resultado encontrado.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
