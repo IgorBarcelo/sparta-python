@@ -25,6 +25,9 @@ def search():
     if name:
         query += " AND DENOM_SOCIAL LIKE :name"
         params['name'] = f"%{name}%"
+    
+    if not date and not name:
+        query = "SELECT * FROM cias_abertas LIMIT 10"
 
     with engine.connect() as connection:
         result = connection.execute(text(query), params)
