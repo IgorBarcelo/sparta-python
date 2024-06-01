@@ -69,7 +69,5 @@ O arquivo `index.html` na pasta `templates` define a estrutura da página web, i
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou entrar em contato:
-
 - Igor Barcelo
 - igor_codmw@hotmail.com
