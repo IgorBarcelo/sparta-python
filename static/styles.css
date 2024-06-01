@@ -14,9 +14,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 90%;
     max-width: 800px;
-    /* text-align: center; */
 }
 
 h1 {
@@ -51,8 +50,12 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+.btn {
+    text-align: center;
+}
+
 button {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     background-color: #007bff;
     color: #ffffff;
@@ -60,6 +63,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+    
 }
 
 button:hover {
