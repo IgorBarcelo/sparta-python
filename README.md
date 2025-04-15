@@ -1,73 +1,68 @@
-## Requisitos
+# 📊 Sparta Python
 
-- Python 3.7 ou superior
-- pip (Python package installer)
+Projeto em Python que realiza o download de dados de Portal Dados Abertos CVM, armazena-os em um banco de dados SQLite e fornece uma interface web para consulta utilizando Flask.
 
-## Instalação
+## 🧰 Tecnologias Utilizadas
 
-1. **Clone o repositório**:
-    ```bash
-    git clone https://github.com/seu_usuario/sparta-python.git
-    cd sparta-python
-    ```
+- Python 3.7 ou superior  
+- Flask  
+- SQLite  
+- Requests  
+- BeautifulSoup  
 
-2. **Crie um ambiente virtual**:
-    ```bash
+
+## 🚀 Instalação
+
+1. Clone o repositório:
+
+```bash 
+    git clone https://github.com/IgorBarcelo/sparta-python.git
+    cd sparta-python 
+```
+
+2. Crie e ative um ambiente virtual:
+
+- No Windows:
+
+```bash
     python -m venv venv
-    ```
+    .\venv\Scripts\activate
+```
 
-3. **Ative o ambiente virtual**:
-    - No Windows:
-        ```bash
-        .\venv\Scripts\activate
-        ```
-    - No Linux/MacOS:
-        ```bash
-        source venv/bin/activate
-        ```
+- No Linux/MacOS:
 
-4. **Instale as dependências**:
-    ```bash
+```bash
+    python3 -m venv venv
+    source venv/bin/activate
+```
+
+3. Instale as dependências:
+
+```bash
     pip install -r requirements.txt
-    ```
+```
 
-## Uso
+🛠️ Uso
+1. Baixar e armazenar os dados
+Execute o script main.py para baixar os dados das companhias abertas e armazená-los no banco de dados SQLite:
 
-### Baixar e salvar os dados
-
-1. **Execute o script `main.py`**:
-    ```bash
+```bash
     python main.py
-    ```
-    Este script baixa os dados das companhias abertas e os salva em um banco de dados SQLite (`cias_abertas.db`).
+```
 
-### Iniciar o servidor Flask
+2. Iniciar o servidor Flask
+Após o banco de dados ser criado, inicie o servidor Flask para acessar a interface web:
 
-1. **Execute o script `app.py`**:
-    ```bash
+```bash
     python app.py
-    ```
+```
 
-2. **Abra um navegador e vá para `http://localhost:5000`**:
-    A interface de busca será carregada. Você pode buscar por data e/ou nome da empresa.
+Acesse http://localhost:5000 no seu navegador para utilizar a interface de busca por data e/ou nome da empresa.
 
-### Estrutura dos Scripts
+## 📸 Demonstrativo
 
-#### `main.py`
+[(public/demo.png)]
 
-Este script é responsável por baixar os dados das companhias abertas a partir de um link público, processar esses dados usando Pandas e armazená-los em um banco de dados SQLite usando SQLAlchemy.
 
-#### `app.py`
-
-Este script cria um servidor web usando Flask. Ele define duas rotas:
-- `/`: Exibe um formulário de busca.
-- `/search`: Realiza a busca no banco de dados com base na data e/ou nome da empresa fornecidos pelo usuário.
-
-### Estrutura do HTML
-
-O arquivo `index.html` na pasta `templates` define a estrutura da página web, incluindo o formulário de busca e a tabela para exibir os resultados.
-
-## Contato
-
-- Igor Barcelo
-- igor_codmw@hotmail.com
+## Créditos
+Desenvolvido por [Igor Barcelo](https://www.linkedin.com/in/igor-barcelo-631010216/)
