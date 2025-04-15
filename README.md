@@ -61,7 +61,7 @@ Acesse http://localhost:5000 no seu navegador para utilizar a interface de busca
 
 ## 📸 Demonstrativo
 
-[(public/demo.png)]
+(public/demo.png)
 
 
 ## Créditos
