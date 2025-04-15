@@ -12,7 +12,9 @@ Projeto em Python que realiza o download de dados de Portal Dados Abertos CVM, a
 - Flask  
 - SQLite  
 - Requests  
-- BeautifulSoup  
+- BeautifulSoup
+- Pandas
+- SQLAlchemy  
 
 
 ## 🚀 Instalação
