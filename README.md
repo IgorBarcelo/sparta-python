@@ -4,7 +4,7 @@ Projeto em Python que realiza o download de dados de Portal Dados Abertos CVM, a
 
 ## 📸 Demonstrativo
 
-![demo](./public/demo.png)
+![demo](https://github.com/IgorBarcelo/sparta-python/blob/main/public/demo.png?raw=true)
 
 ## 🧰 Tecnologias Utilizadas
 
