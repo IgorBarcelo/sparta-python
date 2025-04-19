@@ -2,13 +2,19 @@
 
 Projeto em Python que realiza o download de dados de Portal Dados Abertos CVM, armazena-os em um banco de dados SQLite e fornece uma interface web para consulta utilizando Flask.
 
+## 📸 Demonstrativo
+
+![demo](./public/demo.png)
+
 ## 🧰 Tecnologias Utilizadas
 
 - Python 3.7 ou superior  
 - Flask  
 - SQLite  
 - Requests  
-- BeautifulSoup  
+- BeautifulSoup
+- Pandas
+- SQLAlchemy  
 
 
 ## 🚀 Instalação
@@ -58,10 +64,6 @@ Após o banco de dados ser criado, inicie o servidor Flask para acessar a interf
 ```
 
 Acesse http://localhost:5000 no seu navegador para utilizar a interface de busca por data e/ou nome da empresa.
-
-## 📸 Demonstrativo
-
-[(public/demo.png)]
 
 
 ## Créditos
